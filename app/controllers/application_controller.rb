@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
-  
+
 
 
 end
