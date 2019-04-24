@@ -22,8 +22,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/articles' do
-    article = Article.create(params)
-    redirect "/articles/#{article.id}"
+    @article = Article.create(params)
+    redirect "/articles/#{@article.id}"
   end
 
 
